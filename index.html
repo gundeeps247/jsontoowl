@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontology Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Ontology Visualization</h2>
+    <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea><br>
+    <button id="submitBtn">Generate OWL</button>
+    <button id="resetBtn">Reset</button>
+    <button id="downloadBtn">Download SVG</button>
+
+    <div id="ontology"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

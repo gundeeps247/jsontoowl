@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#ontology {
+    margin-top: 20px;
+    position: relative;
+}
+
+svg {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+text {
+    font-size: 12px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 12px;
+    pointer-events: none;
+}

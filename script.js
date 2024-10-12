@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const submitBtn = document.getElementById('submitBtn');
     const resetBtn = document.getElementById('resetBtn');
     const downloadBtn = document.getElementById('downloadBtn');
@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
             nodes: [],
             links: []
         };
+
+        if (!jsonData.classes || !jsonData.datatypeProperties || !jsonData.objectProperties) {
+            alert('Invalid JSON structure. Make sure it includes "classes", "datatypeProperties", and "objectProperties".');
+            return;
+        }
 
         jsonData.classes.forEach(cls => {
             graphData.nodes.push({ id: cls.id, type: 'class', label: cls.label });

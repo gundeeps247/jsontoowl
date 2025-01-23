@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gundeeps247.github.io/jsontoowl/sitemap.xml
